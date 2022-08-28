@@ -6,7 +6,7 @@ The notebook is split into two parts. The first is the [data exploration](https:
 
 The [second notebook](https://github.com/GabeNicholson/Predicting-Bikepath-Changes-With-FDR-Control/blob/main/(2)%20Model%20Prediction.ipynb) includes the statistical analysis. There are comments and explanations within that notebook which walk through the code and the results.
 
-### **High Level Overview of the Methodology**
+### High Level Overview of the Methodology
 
 To account for the effects of confounders, we fit an ordinary least squares
 regression of bike ride duration on the confounder variables and obtained the residuals—we fit an OLS model for each route, which allows the effects of these variables to vary by route. This is important because
@@ -37,3 +37,5 @@ assumptions. The standard error and t-statistic obtained from a regression assum
 since January 1st, 2010 variable enters the model linearly. For inference to be valid, the errors
 from the regression are also assumed to be homoscedastic and normally distributed. Here, we do
 not use either assumption to have valid inference.
+
+Our findings are that many bike paths became more efficient over the course of two years, this is evident by the negative correlation the resiudals have with time. With Benajamini-Hochberg adjusted p-values, we can conclude that 86 routes had a change that made the route faster while 5 routes had some change that made them slower.
