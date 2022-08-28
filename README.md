@@ -1,4 +1,4 @@
-# Predicting Bike path Changes While Limiting False Discoveries
+# Predicting Bike Path Changes While Controlling for Multiple Testing
 
 A proof of concept attempt at correlating the residuals from OLS with time to make inferences on which bike paths changed over the course of two years. As far as I know, nothing like this has been tried before and it's validity/benefits with FDR control is discussed further in the code notebook. Because we are dealing with over 1.3 million samples and thousands of bike routes, the potential for false discoveries is substantial.
 
